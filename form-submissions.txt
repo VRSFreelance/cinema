@@ -1,0 +1,364 @@
+New Form Submission:
+
+Name: Suvetha
+Email: suvethas2014@gmail.com
+Phone: 09585397285
+City: Coimbatore
+Experience: intermediate
+Course: cinema-makeup-level-1
+
+UTM Source: facebook
+UTM Medium: paid
+UTM Campaign: makeup_july
+UTM Term: beauty_course
+UTM Content: top_banner
+----------------------------------
+New Form Submission:
+
+Name: Test
+Email: test@gmail.com
+Phone: 7303031415
+City: Mumbai
+Experience: beginner
+Course: cinema-makeup-pro
+
+UTM Source: facebook
+UTM Medium: paid
+UTM Campaign: makeup_july
+UTM Term: beauty_course
+UTM Content: top_banner
+----------------------------------
+New Form Submission:
+
+Name: Test
+Email: test@gmail.com
+Phone: 7303031415
+City: Mumbai
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: facebook
+UTM Medium: paid
+UTM Campaign: makeup_july
+UTM Term: beauty_course
+UTM Content: top_banner
+----------------------------------
+New Form Submission:
+
+Name: test-11pm
+Email: test@gmail.com
+Phone: 7303031415
+City: Mumbai
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: facebook
+UTM Medium: paid
+UTM Campaign: makeup_july
+UTM Term: beauty_course
+UTM Content: top_banner
+----------------------------------
+New Form Submission:
+
+Name: Test Developer 2
+Email: test@gmail.com
+Phone: 1
+City: AE
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: meta
+UTM Medium: ig
+UTM Campaign: meta_leads_dubai_20250405
+UTM Term: 120220740335510556
+UTM Content: meta_static_3-options-v1_20250405
+UTM ID: 120220740059600556
+----------------------------------
+New Form Submission:
+
+Name: Test Developer 3
+Email: test@gmail.com
+Phone: 2
+City: EW
+Experience: intermediate
+Course: cinema-makeup-pro
+
+UTM Source: meta
+UTM Medium: ig
+UTM Campaign: meta_leads_dubai_20250405
+UTM Term: 120220740335510556
+UTM Content: meta_static_3-options-v1_20250405
+UTM ID: 120220740059600556
+----------------------------------
+New Form Submission:
+
+Name: Test Lead
+Email: test@gmail.com
+Phone: 7303031415
+City: Mumbai
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: 
+UTM Medium: 
+UTM Campaign: 
+UTM Term: 
+UTM Content: 
+UTM ID: 
+----------------------------------
+New Form Submission:
+
+Name: Test Lead
+Email: test@gmail.com
+Phone: 7303031415
+City: Mumbai
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: 
+UTM Medium: 
+UTM Campaign: 
+UTM Term: 
+UTM Content: 
+UTM ID: 
+----------------------------------
+New Form Submission:
+
+Name: Test Lead
+Email: test@gmail.com
+Phone: 7303031415
+City: Mumbai
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: 
+UTM Medium: 
+UTM Campaign: 
+UTM Term: 
+UTM Content: 
+UTM ID: 
+----------------------------------
+New Form Submission:
+
+Name: test
+Email: test@gmail.com
+Phone: 08169137992
+City: Mumbai
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: 
+UTM Medium: 
+UTM Campaign: 
+UTM Term: 
+UTM Content: 
+UTM ID: 
+----------------------------------
+New Form Submission:
+
+Name: Test Lead - 12:51 am
+Email: test@gmail.com
+Phone: 7303031415
+City: Mumbai
+Experience: intermediate
+Course: cinema-makeup-level-1
+
+UTM Source: test_source
+UTM Medium: google
+UTM Campaign: test_campaign
+UTM Term: 
+UTM Content: 
+UTM ID: 123
+----------------------------------
+New Form Submission:
+
+Name: Test Lead - 12:51 am
+Email: test@gmail.com
+Phone: 7303031415
+City: Mumbai
+Experience: intermediate
+Course: cinema-makeup-level-1
+
+UTM Source: test_source
+UTM Medium: google
+UTM Campaign: test_campaign
+UTM Term: 
+UTM Content: 
+UTM ID: 123
+----------------------------------
+New Form Submission:
+
+Name: Test Mobile Enquiry 
+Email: test@gmail.com
+Phone: 7303031415
+City: Mumbai
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: 
+UTM Medium: 
+UTM Campaign: 
+UTM Term: 
+UTM Content: 
+UTM ID: 
+----------------------------------
+New Form Submission:
+
+Name: Test 2:22
+Email: test@gmail.com
+Phone: 7303031415
+City: Mumbai
+Experience: beginner
+Course: cinema-makeup-pro
+
+UTM Source: test_source
+UTM Medium: google
+UTM Campaign: test_campaign
+UTM Term: 
+UTM Content: 
+UTM ID: 123
+----------------------------------
+New Form Submission:
+
+Name: Test Lead
+Email: test@gmail.com
+Phone: 7303031415
+City: Mumbai
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: 
+UTM Medium: 
+UTM Campaign: 
+UTM Term: 
+UTM Content: 
+UTM ID: 
+----------------------------------
+New Form Submission:
+
+Name: Test
+Email: test@gmail.com
+Phone: 08169137992
+City: Mumbai
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: 
+UTM Medium: 
+UTM Campaign: 
+UTM Term: 
+UTM Content: 
+UTM ID: 
+----------------------------------
+New Form Submission:
+
+Name: Test Developer
+Email: test@gmail.com
+Phone: 9999999999
+City: g
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: 
+UTM Medium: 
+UTM Campaign: 
+UTM Term: 
+UTM Content: 
+UTM ID: 
+----------------------------------
+New Form Submission:
+
+Name: Test Developer 2
+Email: test@gmail.com
+Phone: 9999999999
+City: hh
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: 
+UTM Medium: 
+UTM Campaign: 
+UTM Term: 
+UTM Content: 
+UTM ID: 
+----------------------------------
+New Form Submission:
+
+Name: Test Developer 3
+Email: test@gmail.com
+Phone: 7897897897
+City: tt
+Experience: beginner
+Course: cinema-makeup-pro
+
+UTM Source: instagram
+UTM Medium: social
+UTM Campaign: summer_promo
+UTM Term: 
+UTM Content: story_link
+UTM ID: 
+----------------------------------
+New Form Submission:
+
+Name: Developer Form Test v1
+Email: admin@gmail.com
+Phone: 9999999998
+City: jj
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: instagram
+UTM Medium: social
+UTM Campaign: summer_promo
+UTM Term: 
+UTM Content: story_link
+UTM ID: 
+----------------------------------
+New Form Submission:
+
+Name: Parthiban Subramaniyan - Test
+Email: test@gmail.com
+Phone: 7303031415
+City: Mumbai
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: test_source
+UTM Medium: google
+UTM Campaign: test_campaign
+UTM Term: 
+UTM Content: 
+UTM ID: 123
+----------------------------------
+New Form Submission:
+
+Name: Parthiban Subramaniyan - Test
+Email: test@gmail.com
+Phone: 7303031415
+City: Mumbai
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: test_source
+UTM Medium: google
+UTM Campaign: test_campaign
+UTM Term: 
+UTM Content: 
+UTM ID: 123
+----------------------------------
+New Form Submission:
+
+Name: Parthiban Subramaniyan - Test
+Email: test@gmail.com
+Phone: 7303031415
+City: Mumbai
+Experience: beginner
+Course: cinema-makeup-level-1
+
+UTM Source: test_source
+UTM Medium: google
+UTM Campaign: test_campaign
+UTM Term: 
+UTM Content: 
+UTM ID: 123
+----------------------------------

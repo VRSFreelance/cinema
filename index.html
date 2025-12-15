@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>L'Amour | Transform Dreams Into Cinema</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/argesta-headline" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .head {
+            height: 70px;
+        }
+
+        @media (max-width: 768px) {
+            .head {
+                height: 50px !important;
+            }
+
+            header {
+                padding: 3px 10px;
+            }
+
+            .logo img {
+                margin-top: 5px !important;
+                width: 65% !important;
+            }
+
+            .new-btn {
+                margin-top: -4px !important;
+                padding: 0.2rem 1.2rem !important;
+            }
+
+
+        }
+
+        select {
+            appearance: auto !important;
+            /* ✅ Restore native appearance */
+            -webkit-appearance: auto !important;
+            -moz-appearance: auto !important;
+
+            width: 100%;
+            padding: 12px 12px;
+            font-size: 16px;
+            border: none;
+            border-bottom: 1px solid #999;
+            background-color: transparent;
+            color: #fff;
+            cursor: pointer;
+        }
+
+/* pricing table  */
+
+.pricing-plans{
+  background: white;
+  color: black;
+}
+
+.pricing-container-h1 {
+    font-size: 72px;
+  padding-top: 50px;
+  line-height: 1.3;
+  color: black;
+  text-align: center;
+  font-style: normal;
+}
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 0 20px 60px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.card {
+    background-color: #fff;
+    border-radius: 18px;
+    border: 1px solid #ccc;
+    padding: 0;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    text-align: left;
+    flex-shrink: 0;
+}
+.card.pro {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+.card h2 {
+font-family: 'argesta_headlineregular';
+font-size: 1.2rem;
+  font-weight: 500;
+  /* line-height: 60px; */
+  padding: 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom: 1px solid #ccc;
+}
+
+.card.pro h2 {
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.price {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+
+.price::after {
+    content: ''; 
+    position: absolute;
+    bottom: 15px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100%; 
+    height: 1px; 
+    background-color: #ccc;
+
+}
+
+
+.card.pro .price::after {
+    background-color: #ccc; 
+}
+.details {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    padding: 0 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.details p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    border-bottom: none; 
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    position: relative; 
+}
+
+.details p::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 8px auto 0;
+}
+
+.card.pro .details p::after {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.details p:last-of-type::after {
+    display: none;
+}
+
+
+.enroll-section {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8d4b0;
+    padding: 12px 30px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #d4bd9b;
+}
+.card.pro .btn {
+    background-color: #d4b072;
+    color: #000;
+}
+.card.pro .btn:hover {
+    background-color: #b99358;
+}
+.btn::after {
+    content: ' →';
+    font-weight: bold;
+    padding-left: 8px;
+}
+
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.dot.active {
+    background-color: #d4b072;
+}
+/* ----------------- MOBILE CAROUSEL STYLES ----------------- */
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        justify-content: flex-start;
+        padding-bottom: 30px;
+        gap: 0;
+        align-items: stretch;
+    }
+    .card {
+        width: 85%;
+        max-width: 350px;
+        flex-shrink: 0;
+        scroll-snap-align: center;
+        margin: 0 7.5%;
+    }
+    h1 {
+        font-size: 2rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+    </style>
+    <script src="script.js" defer="defer"></script>
+</head>
+
+<body>
+
+
+
+    <header class="head">
+        <div class="container nav">
+            <div class="logo">
+                <img src="./assets/images/logo-n.png" alt="L'Amour Logo"
+                    style="margin-top: 8px;width: 80%; height: auto;">
+            </div>
+            <!-- <div class="logo"><img src="./assets//images/Group 55.png" alt="L'Amour Logo"></div> -->
+            <div>
+                <button class="nav-btn enquire-btn open-popup-btn new-btn">Enquire Now</button>
+            </div>
+
+        </div>
+    </header>
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-left">
+                    <div class="hero-content">
+                        <!-- <h1 style="font-family: 'argesta_headlineRgIt', serif; font-size: 96px;">
+    Transform Dreams Into Cinema
+</h1> -->
+                        <h1>Transform Dreams Into Cinema</h1>
+                        <p>Master the art that creates movie magic. In 7-15 days, learn the techniques behind
+                            Hollywood's most iconic transformations.</button>
+                            <br><br>
+                            <button class="nav-btn open-popup-btn">Start My Cinema Makeup Journey</button>
+                    </div>
+                </div>
+                <div class="hero-right"></div>
+            </div>
+        </div>
+    </section>
+    <section class="stats">
+        <div class="container">
+            <h2 class="stats-title">Industry at a Glance</h2>
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-value">$2.8B</div>
+                    <div class="stat-label">Global special effects makeup market projected by 2028</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">47%</div>
+                    <div class="stat-label">Growth in Middle East film/TV production since 2020</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">$120K</div>
+                    <div class="stat-label">Average annual salary for experienced makeup artists</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">200+</div>
+                    <div class="stat-label">Productions filmed in Dubai yearly as regional hub emerges</div>
+                </div>
+            </div>
+            <div class="stats-cta">
+                <p class="stats-cta-text">Ready to claim your place in this growing industry?</p>
+                <button class="nav-btn black-btn open-popup-btn">Speak with a Course Expert</button>
+
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container storytelling">
+            <div class="storytelling-content">
+                <h2 class="section-title">Where Makeup Becomes Storytelling</h2>
+                <p>Cinema makeup isn't about trends—it's about truth. Every look must hold up under harsh lights and
+                    close-ups. You'll master prosthetics, silicone, and airbrushing to create transformations that don't
+                    just look real—they feel real.</p>
+                <h2 class="storytelling-cta">Curious about the techniques you'll master?</h2>
+                <button class="nav-btn open-popup-btn">Get Course Details from Our Expert</button>
+            </div>
+            <div class="storytelling-image"><img src="./assets/images/3.png" alt="Storytelling Makeup"
+                    class="storytelling-img"></div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Our Stories in Motion</h2>
+            <div class="carousel-container"><button class="carousel-btn prev" id="prev_live">‹</button>
+                <div class="carousel">
+                     <div class="carousel-item"><iframe src="https://www.youtube.com/embed/GHRx5fZjK5Y" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/xCj9RFDDokE" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/YHD3_3SJ7cQ" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/Q8i_xlHMOTM" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/sRjXSifGvYc" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/-b86RSEn9BA" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/0taDq7iJMHo" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/15Krj8MeNF8" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/6hqBC28DoJo" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/FM6z_B2gJ2w" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/gvLiwHvLnSI" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/jAFQJ7W3p9I" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/K8zOblZz6Fs" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/DaprFa5-FVY" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/8itudBZLOcI" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/1Hrw8tc7Y8U" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/0T3oGvXv4WY" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/c_PAEKRAw1A" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/1wFrD3A8RrE" frameborder="0" allowfullscreen></iframe></div>
+                </div><button class="carousel-btn next" id="next_live">›</button>
+            </div>
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+
+
+<section id="pricing-plans" class="pricing-plans">
+    <h1 class="pricing-container-h1">Two Paths to<br>Professional Mastery</h1>
+    
+    <div class="pricing-container">
+    
+        <div class="card">
+            <h2>Cinema Makeup Level 1</h2>
+            <!-- <div class="price">6,000 د.إ</div> -->
+            <div class="price"><img src="assets/images/UAE_Dirham_Symbol.png" alt="UAE Dirham" 
+        style="height: 1em; vertical-align: middle;"> 6,000</div>
+             <div class="details">
+                <p><span>7 Day Program</span></p>
+                <p><span>6 Hours of Demo</span></p>
+                <p><span>22 Practice Hours</span></p>
+                <p><span>Level 1 + KHDA Certification</span></p>
+                <p><span>Course focusses on Introduction to SFX, Moulding, Frostbites and Blood FX</span></p>
+                <p><span>Project Work in Blood FX, Basic Sculpting & Molding</span></p>
+                <p><span>Best for students who seek a basic step into the world of Cinema Makeup</span></p>
+                <p><span>Foundation and Industry Orientation includes cinema makeup introduction, career pathways, basic tool and product familiarity, and introductory safety protocols (chemicals, masks).</span></p>
+            </div>
+            <div class="enroll-section">
+                <a href="#" class="btn">Enroll Now</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <h2>Cinema Makeup Level 2</h2>
+            <div class="price"><img src="assets/images/UAE_Dirham_Symbol.png" alt="UAE Dirham" 
+        style="height: 1em; vertical-align: middle;">12,000</div>
+            <div class="details">
+                <p><span>15 Day Program</span></p>
+                <p><span>12 Hours of Demo</span></p>
+                <p><span>48 Practice Hours</span></p>
+                <p><span>Level 2 + KHDA Certification</span></p>
+                <p><span>Course focusses on Introduction to SFX, basic sculpting, wounds, bald cap, old age makeup</span></p>
+                <p><span>Project Work in Basic wound & age makeup applications</span></p>
+                <p><span>Best for Beginners looking to explore cinema makeup</span></p>
+                <p><span>Foundation and Industry Orientation includes Intermediate guide to cinema makeup & career pathways, basic tool and product familiarity & introductory safety protocols (chemicals, masks).</span></p>
+            </div>
+            <div class="enroll-section">
+                <a href="#" class="btn">Enroll Now</a>
+            </div>
+        </div>
+    
+        <div class="card pro">
+            <h2>Cinema Makeup Pro</h2>
+            <div class="price"><img src="assets/images/white-uae-dirham.png" alt="UAE Dirham" 
+        style="height: 1em; vertical-align: middle;">25,000</div>
+            <div class="details">
+                <p>30 Day Program</p>
+                <p>24 Hours of Demo</p>
+                <p>96 Practice Hours</p>
+                <p>Pro + KHDA Certification</p>
+                <p>Course focusses on advanced prosthetics, gore & facial effects, airbrush, hair punching, full transformations</p>
+                <p>Project Work in Full model transformations with hair & prosthetics</p>
+                <p>Best for Beginners looking to explore cinema makeup</p>
+                <p>Foundation and Industry Orientation includes Comprehensive overview of the cinema makeup industry, advanced pro tools/products handling, detailed safety protocols including full PPE practices.</p>
+            </div>
+            <div class="enroll-section">
+                <a href="#" class="btn">Enroll Now</a>
+            </div>
+            </div>
+    
+    </div>
+</section>
+
+    <section class="section excellence-section">
+        <div class="container excellence-flex">
+            <div class="excellence-left">
+                <h2 class="section-title">Where Global Expertise Meets Dubai Excellence</h2>
+                <p class="excellence-desc">At L'Amour, your passion deserves world-class training. In the heart of
+                    Dubai's creative scene, we blend global techniques with local insight expertise.</p>
+            </div>
+            <div class="excellence-right">
+                <div class="excellence-video-wrapper"><iframe width="100%" height="315"
+                        src="https://www.youtube.com/embed/z1xZdw-KHG8?si=yalMRV771mLoDBRq" title="YouTube video player" frameborder="0"
+                        allowfullscreen></iframe></div>
+            </div>
+        </div>
+        <div class="container excellence-diff">
+            <h3 class="excellence-diff-title">What Makes Us Different:</h3>
+            <div class="excellence-icons-row">
+                <div class="excellence-icon-item"><img src="assets/images/What Makes 1.png"
+                        alt="International techniques" class="excellence-icon-img">
+                    <div class="excellence-icon-desc">International techniques adapted for regional opportunities</div>
+                </div>
+                <div class="excellence-icon-item"><img src="assets/images/What Makes 2.png" alt="Small class sizes"
+                        class="excellence-icon-img">
+                    <div class="excellence-icon-desc">Small class sizes for personalized attention</div>
+                </div>
+                <div class="excellence-icon-item"><img src="assets/images/What Makes 3.png"
+                        alt="Dubai studio facilities" class="excellence-icon-img">
+                    <div class="excellence-icon-desc">State-of-the-art Dubai studio facilities</div>
+                </div>
+                <div class="excellence-icon-item"><img src="assets/images/What Makes4.png" alt="Inclusive approach"
+                        class="excellence-icon-img">
+                    <div class="excellence-icon-desc">Inclusive approach honoring diverse beauty traditions</div>
+                </div>
+            </div>
+            <div class="stats-cta-flex">
+                         <h3 class="excellence-diff-title">Ready to experience the L'Amour difference?</h3>
+                        <button class="nav-btn open-popup-btn">Visit Our Dubai Studio</button>
+</div>
+        </div>
+    </section>
+    <section class="section learn-artist-section">
+        <div class="container learn-artist-flex">
+
+            <div class="learn-artist-image-bg"></div>
+            <div class="learn-artist-content">
+                <h2 class="learn-artist-title">Learn from<br>Award-Winning Artist Ena Azevedo</h2>
+                 <div class="learn-artist-mobile-img">
+                    <img src="./assets/images/enaazevedo.png" alt="Ena Azevedo">
+                </div>
+                <p class="learn-artist-desc">Ena discovered her calling at the intersection of traditional art and
+                    cutting-edge effects. At 17, her first solo exhibition sold out completely.</p>
+                <div class="learn-artist-journey">
+                    <div class="learn-artist-journey-title">Her journey</div>
+                    <div class="learn-artist-journey-desc">Art gallery owner → commissioned sculptor → mask-maker →
+                        special effects artist.</div>
+                </div>
+                <div class="learn-artist-achievements">
+                    <div class="learn-artist-achievements-title">Key Achievements</div>
+                    <div class="learn-artist-achievements-icons">
+                        <div class="achievement-item"><img src="assets/images/eff_logo.png" alt="Achievement"
+                                class="achievement-img">
+                            <div class="achievement-label">International Awards</div>
+                        </div>
+                        <div class="achievement-item"><img src="assets/images/18+ years.png" alt="Achievement"
+                                class="achievement-img">
+                            <div class="achievement-label">Film SFX Credits</div>
+                        </div>
+                        <div class="achievement-item"><img src="assets/images/Expert.png" alt="Achievement"
+                                class="achievement-img">
+                            <div class="achievement-label">Gallery Exhibitions</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="learn-artist-cta-text">
+                    <p class="stats-cta-text">Want to learn directly from an award-winning professional?</p>
+                </div>
+                <!--<button class="nav-btn open-popup-btn">Schedule a Call with Ena </button>-->
+                <button class="nav-btn black-btn">Schedule a Call with Ena</button>
+
+            </div>
+        </div>
+    </section>
+    <section class="skills-section skills-section-updated">
+        <div class="container">
+            <h2 class="skills-title">Where Will Your New Skills Take You?</h2>
+            <p class="skills-desc">The entertainment industry is exploding with opportunities. Specialized makeup
+                artists are in high demand across multiple sectors.</p>
+            <div class="skills-cards-row">
+                <div class="skill-card-img"><img src="assets/images/Film & Television.png" alt="Cinema & TV"> <span
+                        class="skill-card-label">Film & Television</span></div>
+                <div class="skill-card-img"><img src="assets/images/2 - Theater Art.jpg" alt="Theatre & Performance">
+                    <span class="skill-card-label">Theatre & Performance</span>
+                </div>
+                <div class="skill-card-img"><img src="assets/images/Content Creation.png" alt="Content Creation"> <span
+                        class="skill-card-label">Content Creation</span></div>
+                <div class="skill-card-img"><img src="assets/images/Freelance Artistry.png" alt="Freelance Artistry">
+                    <span class="skill-card-label">Freelance Artistry</span>
+                </div>
+                <div class="skill-card-img"><img src="assets/images/Entrepreneurship.png" alt="Entrepreneurship"> <span
+                        class="skill-card-label">Entrepreneurship</span></div>
+            </div>
+            <div class="slider-dots skills-dots"></div>
+            <div class="skills-cta-text">Ready to explore your career potential?</div>
+            <div class="button-container">
+                <button class="nav-btn open-popup-btn">Discuss Your Goals with Our Expert</button>
+
+            </div>
+        </div>
+    </section>
+    <section class="classes-section classes-section-updated">
+        <div class="container classes-flex">
+            <div class="classes-left">
+                <h2 class="classes-title">Small Classes.<br>Big Results.</h2>
+                <p class="classes-desc">We keep class sizes small (maximum 12 students) for personalized attention.</p>
+            </div>
+            <div class="classes-right">
+                <div class="classes-cohort-title">Next Cohort:</div>
+                <div class="cohort-cards-container">
+                    <div class="cohort-card">
+                        <div class="cohort-block">
+                            <div class="cohort-date">20th Aug <span class="cohort-type">(Cinema)</span></div>
+                            <div class="cohort-seats">4 Seats Left</div>
+                        </div>
+                    </div>
+                    <div class="cohort-card">
+                        <div class="cohort-block">
+                            <div class="cohort-date">20th Aug <span class="cohort-type">(Cinema Pro)</span></div>
+                            <div class="cohort-seats">7 Seats Left</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container classes-cta-flex">
+            <div class="classes-cta-left">Don't miss your chance to join this exclusive program</div>
+            <div class="classes-cta-right">
+                <button class="nav-btn black-btn">Reserve Your Seat – Speak to Expert Now</button>
+
+            </div>
+        </div>
+    </section>
+    <section class="faq-section">
+        <div class="container faq-flex">
+            <div class="faq-content">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <div class="faq">
+   
+                            <div class="faq-item">
+                                <div class="faq-question">What makes Cinema Makeup different from regular beauty makeup?</div>
+                                <div class="faq-answer">
+                                    Cinema Makeup focuses on creating characters, emotions, and illusions. You’ll go beyond glam to explore SFX, prosthetics, aging effects, blood work, and fantasy looks—skills that are essential in film, theatre, cosplay, and entertainment.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">Will I get to build a portfolio during the course?</div>
+                                <div class="faq-answer">
+                                    Yes. You'll have the opportunity to document your practical work and create a basic portfolio by the end of the course. We also offer additional portfolio-building support for students who want to pursue advanced work or industry placements.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">How is this course taught—online or in person?</div>
+                                <div class="faq-answer">
+                                    All Cinema Makeup courses are taught in person at our Dubai campus. This hands-on learning approach is essential when working with prosthetics, molds, and materials that require in-studio practice.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">What materials or makeup kits will I need?</div>
+                                <div class="faq-answer">
+                                    We provide a specially curated Student Makeup Kit as part of your course fee. It includes the essentials needed for all demonstrations and practice sessions during the course.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">How do I know if this is the right course for me?</div>
+                                <div class="faq-answer">
+                                    If you’re curious about character transformation, love fantasy or horror films, or dream of working behind the scenes in cinema, this course is your perfect starting point. Book a free counselling session to explore whether it aligns with your goals.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">What kind of career paths can I explore after completing this course?</div>
+                                <div class="faq-answer">
+                                    Graduates go on to assist on film sets, work backstage in theatre, join production teams, or freelance in areas like SFX makeup, cosplay, content creation, and more. This course opens multiple doors across creative industries.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">Will I receive one-on-one feedback on my work?</div>
+                                <div class="faq-answer">
+                                    Absolutely. With small batch sizes (maximum 6 students), our instructors provide personalized feedback and mentorship throughout the course, helping you improve your skills with confidence.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">Do you offer support after the course ends?</div>
+                                <div class="faq-answer">
+                                    Yes. Our commitment doesn’t end at certification. You'll gain access to our alumni network, continued career guidance, invites to exclusive events, and product discounts designed to support your ongoing growth.
+                                </div>
+                            </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+    <section class="contact-section contact-section-updated">
+        <div class="container contact-flex">
+            <div class="contact-form-wrap">
+                <form class="contact-form" action="form-handler.php" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email address" required>
+                    <input type="tel" name="phone" placeholder="Phone" required>
+                    <input type="text" name="city" placeholder="City" required>
+
+                    <select name="experience" required>
+                        <option value="" disabled selected>Experience Level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+
+                    <select name="course" required>
+                        <option value="" disabled selected>Course Interest</option>
+                        <option value="cinema-makeup-level-1">Cinema Makeup Level 1</option>
+                        <option value="cinema-makeup-pro">Cinema Makeup Pro</option>
+                    </select>
+                    <!-- Hidden UTM inputs -->
+                    <input type="hidden" name="utm_source" value="facebook">
+                    <input type="hidden" name="utm_medium" value="paid">
+                    <input type="hidden" name="utm_campaign" value="makeup_july">
+                    <input type="hidden" name="utm_term" value="beauty_course">
+                    <input type="hidden" name="utm_content" value="top_banner">
+                    <input type="hidden" name="redirect" value="thankyou.html">
+
+                <button type="submit" class="learn-artist-btn" style="background-color: #ebd4a6 !important; color: #000 !important; border: 2px solid #000; padding: 12px 24px; border-radius: 8px; font-family: var(--font-body); font-weight: 700; font-size: 16px;">
+  Connect with Our Course Expert <span class="btn-icon">→</span>
+</button>
+
+
+                </form>
+            </div>
+            <div class="contact-image-bg"></div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+    <footer class="footer footer-white">
+        <div class="container footer-flex">
+            <div class="footer-left"><img src="assets/logo/Group 55.png" alt="L'Amour Logo" class="footer-logo-img">
+            </div>
+            <div class="footer-right">
+                <div class="footer-contact-block">
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-heading"><img src="assets/images/Group 100.png" alt="Call Us"
+                                class="footer-contact-icon-img"> <span class="footer-contact-label">Call Us:</span>
+                        </div>
+                        <div class="footer-contact-desc">+971 56 245 4699</div>
+                    </div>
+
+
+
+                    <div class="footer-contact-heading"><img src="assets/images/Path 52.png" alt="Location"
+                            class="footer-contact-icon-img"> <span class="footer-contact-label">Location:</span>
+                    </div>
+                    <div class="footer-contact-desc">Dubai. RO11, Ground Floor, Block No. 06 Dubai Knowledge Park
+                        King Salman Bin Abdulaziz Al Saud St - Al Sufouh - Al Sufouh 2, Dubai, United Arab Emirates.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="container footer-bottom-flex">
+            <div class="footer-copyright">© 2025 L'Amour. All Rights Reserved.</div>
+            <div class="footer-credit">Site by Rapzter Digital</div>
+        </div>
+    </div>
+
+
+    <div class="popup-form-overlay" id="popupFormOverlay" style="display: none;">
+        <div class="popup-form">
+            <span class="close-btn" id="closePopupForm">×</span>
+            <h2>Sign Up for More Info</h2>
+            <form class="contact-form" id="popupForm" action="form-handler.php" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email address" required>
+                <input type="tel" name="phone" placeholder="Phone" required>
+                <input type="text" name="city" placeholder="City" required>
+
+                <select name="experience" required>
+                    <option value="" disabled selected>Experience Level</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+
+                <select name="course" required>
+                    <option value="" disabled selected>Course Interest</option>
+                    <option value="cinema-makeup-level-1">Cinema Makeup Level 1</option>
+                    <option value="cinema-makeup-pro">Cinema Makeup Pro</option>
+                </select>
+                <!-- Hidden UTM inputs -->
+                <input type="hidden" name="utm_source" id="utm_source">
+                <input type="hidden" name="utm_medium" id="utm_medium">
+                <input type="hidden" name="utm_campaign" id="utm_campaign">
+                <input type="hidden" name="utm_term" id="utm_term">
+                <input type="hidden" name="utm_content" id="utm_content">
+                <input type="hidden" name="utm_id" id="utm_id">
+
+
+                <button type="submit" class="learn-artist-btn">Submit <span class="btn-icon">→</span></button>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const popup = document.getElementById('popupFormOverlay');
+        const closeBtn = document.getElementById('closePopupForm');
+
+        // Open popup
+        document.querySelectorAll('.open-popup-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                popup.style.display = 'flex';
+            });
+        });
+
+        // Close popup
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                popup.style.display = 'none';
+            });
+        }
+
+        // Close when clicking outside the form
+        if (popup) {
+            popup.addEventListener('click', (e) => {
+                if (e.target === popup) {
+                    popup.style.display = 'none';
+                }
+            });
+        }
+    });
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.pricing-container');
+    const cards = Array.from(container.querySelectorAll('.card'));
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    if (isMobile) {
+        // Reorder cards: Pro first, then Level 2, then Level 1
+        const proCard = cards.find(c => c.classList.contains('pro'));
+        const level2 = cards.find(c => c.querySelector('h2').textContent.includes('Level 2'));
+        const level1 = cards.find(c => c.querySelector('h2').textContent.includes('Level 1'));
+        container.innerHTML = ''; 
+        container.appendChild(proCard);
+        container.appendChild(level2);
+        container.appendChild(level1);
+        // Create dots
+        const dotsContainer = document.createElement('div');
+        dotsContainer.className = 'pagination-dots';
+        container.parentElement.appendChild(dotsContainer);
+        const updatedCards = container.querySelectorAll('.card');
+        updatedCards.forEach((card, index) => {
+            const dot = document.createElement('div');
+            dot.className = 'dot';
+            dot.dataset.index = index;
+            dotsContainer.appendChild(dot);
+            dot.addEventListener('click', () => {
+                container.scrollTo({
+                    left: card.offsetLeft - (container.offsetWidth - card.offsetWidth) / 2,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        // Update active dot
+        const updateActiveDot = () => {
+            const containerScrollLeft = container.scrollLeft;
+            const cardWidth = updatedCards[0].offsetWidth;
+            const cardMargin = (container.offsetWidth - cardWidth) / 2;
+            const activeIndex = Math.round((containerScrollLeft + cardMargin) / (cardWidth + cardMargin * 2));
+            dotsContainer.querySelectorAll('.dot').forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === activeIndex);
+            });
+        };
+        container.addEventListener('scroll', updateActiveDot);
+        if (dotsContainer.querySelector('.dot')) {
+            dotsContainer.querySelector('.dot').classList.add('active');
+        }
+        // Scroll to first card (Pro)
+        setTimeout(() => {
+            container.scrollTo({
+                left: updatedCards[0].offsetLeft - (container.offsetWidth - updatedCards[0].offsetWidth) / 2,
+                behavior: 'smooth'
+            });
+        }, 100);
+    }
+});
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector(".carousel");
+        const prevBtn = document.getElementById("prev_live");
+        const nextBtn = document.getElementById("next_live");
+
+        const itemWidth = carousel.querySelector(".carousel-item").offsetWidth;
+        let scrollPosition = 0;
+
+        prevBtn.addEventListener("click", function () {
+            scrollPosition -= itemWidth;
+            carousel.scrollTo({
+                left: scrollPosition,
+                behavior: "smooth",
+            });
+        });
+
+        nextBtn.addEventListener("click", function () {
+            scrollPosition += itemWidth;
+            carousel.scrollTo({
+                left: scrollPosition,
+                behavior: "smooth",
+            });
+        });
+    });
+</script>
+
+
+
+<script>
+const wrapper = document.querySelector('.pricing-wrapper');
+const dotsContainer = document.querySelector('.carousel-dots');
+const cards = document.querySelectorAll('.pricing-card');
+
+cards.forEach((_, i) => {
+  const dot = document.createElement('span');
+  if (i === 0) dot.classList.add('active');
+  dot.addEventListener('click', () => {
+    wrapper.scrollTo({ left: i * wrapper.offsetWidth, behavior: 'smooth' });
+    updateDots(i);
+  });
+  dotsContainer.appendChild(dot);
+});
+
+function updateDots(index) {
+  dotsContainer.querySelectorAll('span').forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+}
+
+wrapper.addEventListener('scroll', () => {
+  const index = Math.round(wrapper.scrollLeft / wrapper.offsetWidth);
+  updateDots(index);
+});
+</script>
+
+
+<script>
+    function getURLParameter(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+        var results = regex.exec(window.location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("utm_source").value = getURLParameter("utm_source");
+        document.getElementById("utm_medium").value = getURLParameter("utm_medium");
+        document.getElementById("utm_campaign").value = getURLParameter("utm_campaign");
+        document.getElementById("utm_term").value = getURLParameter("utm_term");
+        document.getElementById("utm_content").value = getURLParameter("utm_content");
+        document.getElementById("utm_id").value = getURLParameter("utm_id");
+    });
+</script>
+
+
+</html>

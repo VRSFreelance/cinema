@@ -1,0 +1,2140 @@
+/* Li'Amour Cinema Makeup Academy Styles */
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+/*-----------------------------------------
+    FONT-FACE DEFINITIONS (Argesta Family)
+------------------------------------------*/
+
+/* Argesta Text Italic */
+@font-face {
+    font-family: 'argesta_textregular_italic';
+    src: url('../fonts/Argesta_Webfont/argestatext-regularitalic-webfont.eot');
+    src: url('../fonts/Argesta_Webfont/argestatext-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Argesta_Webfont/argestatext-regularitalic-webfont.woff2') format('woff2'),
+         url('../fonts/Argesta_Webfont/argestatext-regularitalic-webfont.woff') format('woff'),
+         url('../fonts/Argesta_Webfont/argestatext-regularitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Argesta Text Bold */
+@font-face {
+    font-family: 'argesta_textbold';
+    src: url('../fonts/Argesta_Webfont/argestatext-bold-webfont.eot');
+    src: url('../fonts/Argesta_Webfont/argestatext-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Argesta_Webfont/argestatext-bold-webfont.woff2') format('woff2'),
+         url('../fonts/Argesta_Webfont/argestatext-bold-webfont.woff') format('woff'),
+         url('../fonts/Argesta_Webfont/argestatext-bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Argesta Text Regular */
+@font-face {
+    font-family: 'argesta_textregular';
+    src: url('../fonts/Argesta_Webfont/argestatext-regular-webfont.eot');
+    src: url('../fonts/Argesta_Webfont/argestatext-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Argesta_Webfont/argestatext-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Argesta_Webfont/argestatext-regular-webfont.woff') format('woff'),
+         url('../fonts/Argesta_Webfont/argestatext-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Argesta Display Regular */
+@font-face {
+    font-family: 'argesta_displayregular';
+    src: url('../fonts/Argesta_Webfont/argestadisplay-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Argesta_Webfont/argestadisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Argesta Display Italic */
+@font-face {
+    font-family: 'argesta_displayregular_italic';
+    src: url('../fonts/Argesta_Webfont/argestadisplay-regularitalic-webfont.woff2') format('woff2'),
+         url('../fonts/Argesta_Webfont/argestadisplay-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Argesta Headline Regular */
+@font-face {
+    font-family: 'argesta_headlineregular';
+    src: url('../fonts/Argesta_Webfont/argestaheadline-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Argesta_Webfont/argestaheadline-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Argesta Headline Italic */
+@font-face {
+    font-family: 'argesta_headlineRgIt';
+    src: url('../fonts/Argesta_Webfont/argestaheadline-regularitalic-webfont.woff2') format('woff2'),
+         url('../fonts/Argesta_Webfont/argestaheadline-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*-----------------------------------------
+    CSS ROOT VARIABLES
+------------------------------------------*/
+:root {
+    --primary: #e6cfa7;
+    --dark: #181818;
+    --light: #fff;
+    --accent: #bfa77a;
+    --gray: #f5f5f5;
+    --shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+
+    --font-headline: 'argesta_headlineregular', serif;
+    --font-body: 'Montserrat', sans-serif;
+    --font-headline-italic: 'argesta_headlineRgIt', serif;
+}
+
+/*-----------------------------------------
+    BASE STYLES
+------------------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background: #040404;
+    color: var(--light);
+    line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+    font-family: var(--font-headline-italic);
+    font-size: 96px;
+    font-style: italic;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: 'argesta_headlineregular', serif;
+    font-size: 72px;
+     line-height: 86px; 
+    font-weight: normal;
+    font-style: normal;
+    text-align: center; /* optional */
+    padding-bottom: 20px; /* optional spacing */
+  }
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 40px;
+        line-height: 43px;
+    }
+}
+
+/* Paragraph & Label Text */
+p,
+.excellence-icon-desc,
+.achievement-label {
+    font-family: var(--font-body);
+    font-size: 20px;
+}
+
+/* Base description size as per request */
+p,
+.excellence-icon-desc,
+.achievement-label {
+    font-family: var(--font-body);
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-headline); 
+    /* Base heading font set to Argesta */
+    font-weight: 200;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header --- */
+header {
+    background: rgba(85, 81, 81, 0.67);
+    border: 1px solid #707070;
+    border-radius: 75px;
+    position: fixed;
+    width: calc(100% - 40px);
+    left: 20px;
+    top: 10px;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+    padding: 2px 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-btn, .cta, .cta-btn, .skills-btn, .classes-cta-btn, .enroll-btn {
+    background: #EBD4A6;
+    color: var(--dark) !important;
+    padding: 0.8rem 2.2rem; /* 👈 Less left/right padding */
+    border-radius: 16px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 16px;
+    border: 2px solid #EBD4A6;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+    text-decoration: none;
+    display: inline-flex;     /* 👈 Shrinks to fit content */
+    align-items: center;
+    justify-content: center;
+    max-width: max-content;  /* 👈 Prevents stretching */
+}
+
+.learn-artist-cta-wrapper {
+  text-align: center; /* centers inline/inline-block elements */
+  margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .nav-btn, .cta, .cta-btn, .skills-btn, .classes-cta-btn,  .enroll-btn {
+    font-size: 14px;
+    padding: 0.5rem 1.2rem;
+    display: inline-block;
+    margin: 1rem auto 0 auto;
+  }
+
+  .stats-cta-text {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .learn-artist-cta-wrapper {
+    padding: 0 1rem;
+  }
+}
+
+
+.enquire-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+
+
+
+.nav-btn:hover,
+.cta:hover,
+.cta-btn:hover,
+.skills-btn:hover,
+.classes-cta-btn:hover,
+.learn-artist-btn:hover,
+.enroll-btn:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+.nav-btn::after,
+.cta::after {
+    content: '→';
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: linear-gradient(to right, #040404 45%, transparent 55%), url('./assets/images/hero-img.png') right center/60% no-repeat;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.hero-inner {
+    display: flex;
+    padding-top: 150px;
+}
+
+.hero-left {
+    width: 50%;
+}
+
+/* RULE: "Transform Dreams Into Cinema" */
+.hero-content h1 {
+    font-family: var(--font-headline-italic);
+    /* Argesta Italic */
+    font-size: 96px;
+    /* 96px as requested */
+    font-weight: 400;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+/* RULE: Description Text */
+.hero-content p {
+    font-size: 20px;
+    /* 20px as requested */
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+/* --- Section Titles & Prominent Left-Side Text --- */
+/* RULE: Other Titles */
+.stats-title,
+.section-title {
+    font-family: var(--font-headline);
+    /* Argesta Regular */
+    font-size: 72px;
+    /* 65px as requested */
+    font-weight: 200;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* RULE: Left Side Text */
+.stats-cta-text,
+.storytelling-cta,
+.excellence-diff-title,
+.skills-cta-text,
+.classes-cta-left {
+    font-family: 'argesta_textregular', serif;
+    font-size: 36px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* --- Stats Section --- */
+.stats {
+    background: var(--light);
+    color: var(--dark);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.stats-title {
+    color: #000;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.stat {
+    flex: 1;
+    padding: 10px;
+}
+
+.stat-value {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+}
+
+.stat-label {
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #000;
+}
+
+.stats-cta {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.stats-cta .stats-cta-text {
+    color: #000;
+    margin: 0;
+    width: 60%;
+    text-align: left;
+}
+
+.stats-cta .nav-btn,  .learn-artist-btn {
+   background: var(--dark) !important;
+    color: var(--light) !important;
+    border: 2px solid var(--dark) !important;
+    width: 40%;
+} 
+
+
+.black-btn {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 2px solid #000 !important;
+}
+.black-btn:hover {
+    background-color: #EBD4A6 !important;
+    color: #000 !important;
+}
+
+
+
+
+
+.stats-cta-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stats-cta-flex h3 {
+  margin: 0;
+  font-weight: 300;
+}
+
+
+/* --- Storytelling Section --- */
+.storytelling {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 0;
+}
+
+.storytelling-content {
+    flex: 1;
+}
+
+.storytelling-content .section-title {
+    text-align: left;
+}
+
+.storytelling-content p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .storytelling-content p {
+        text-align: left;
+    }
+}
+
+.storytelling-content .storytelling-cta {
+    margin-bottom: -0.5rem;
+    line-height: normal;
+    text-align: left !important;
+}
+
+.storytelling-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.storytelling-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+@media (max-width: 768px) {
+    .storytelling {
+        gap: 0;
+    }
+}
+
+
+
+/* --- Carousel Section --- */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.carousel {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    width: 280px;
+    flex-shrink: 0;
+    height: 400px;
+    background: #222;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.carousel-item iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.carousel-btn {
+    background: #EBD4A6;
+    color: var(--dark);
+    border: 2px solid #EBD4A6;
+    width: 50px;
+    height: 50px;
+    border-radius: 16px !important;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+.carousel-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #444;
+    border-color: #444;
+}
+
+/* --- Fix Carousel Button Positioning --- */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-btn.prev {
+    left: 2%;
+}
+
+.carousel-btn.next {
+    right: 2%;
+}
+
+
+/* --- Slider Dots --- */
+.carousel-dots,
+.slider-dots {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 0;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #555;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    padding: 0;
+}
+
+.dot:hover {
+    transform: scale(1.2);
+}
+
+.carousel-dots {
+  display: none !important;
+}
+
+
+.carousel-dots .dot.active,
+.skills-dots .dot.active {
+    background-color: #EBD4A6; /* your brand accent */
+}
+
+
+
+
+
+
+
+
+
+/*.dot.active {
+    background-color: var(--primary);
+}
+
+.skills-dots .dot,
+.carousel-dots .dot {
+    background-color: #777;
+}
+
+.skills-dots .dot.active,
+.carousel-dots .dot.active {
+    background-color: var(--primary);
+}*/
+
+
+/* --- Mastery Section --- */
+.section.light {
+    background: var(--gray);
+    color: var(--dark);
+    padding: 4rem 0;
+}
+
+.mastery-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.mastery-title {
+    font-family: var(--font-headline);
+    font-size: 72px;
+    font-weight: 200;
+    color: #222;
+}
+@media (max-width: 768px) {
+    .mastery-title {
+        font-size: 36px;
+    }
+}
+
+.mastery-table-layout {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.mastery-courses-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.mastery-card {
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.mastery-details-column {
+    flex-basis: 25%;
+    background: #fff;
+}
+
+.card-white {
+    flex: 1;
+    background: #fff;
+    color: #222;
+}
+
+.card-black {
+    flex: 1;
+    background: var(--dark);
+    color: var(--light);
+}
+
+.mastery-row {
+    padding: 10px 25px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+    line-height: 1.4;
+    font-family: var(--font-body);
+    display: flex;
+    align-items: center;
+}
+
+.mastery-details-column .mastery-row {
+    justify-content: flex-start;
+    font-weight: 500;
+    color: #444;
+}
+
+.card-white .mastery-row,
+.card-black .mastery-row {
+    justify-content: center;
+    text-align: center;
+}
+
+.card-white .mastery-row {
+    color: #444;
+}
+
+.card-black .mastery-row {
+    color: #ccc;
+    border-bottom-color: #444;
+}
+
+.mastery-row.header {
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.mastery-row.header h3 {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.mastery-details-column .mastery-row.header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-black .mastery-row.header h3 {
+    color: #fff;
+}
+
+.mastery-card .mastery-row:nth-of-type(1) {
+    min-height: 80px;
+}
+
+.mastery-card .mastery-row:nth-of-type(2) {
+    min-height: 60px;
+}
+
+.mastery-card .mastery-row:nth-of-type(3) {
+    min-height: 60px;
+}
+
+.mastery-card .mastery-row:nth-of-type(4) {
+    min-height: 60px;
+}
+
+.mastery-card .mastery-row:nth-of-type(5) {
+    min-height: 60px;
+}
+
+.mastery-card .mastery-row:nth-of-type(6) {
+    min-height: 120px;
+}
+
+.mastery-card .mastery-row:nth-of-type(7) {
+    min-height: 85px;
+}
+
+.mastery-card .mastery-row:nth-of-type(8) {
+    min-height: 100px;
+}
+
+.mastery-card .mastery-row:nth-of-type(9) {
+    min-height: 160px;
+}
+
+.mastery-card .mastery-row:nth-of-type(10) {
+    min-height: 60px;
+}
+
+.mastery-row.footer {
+    flex-grow: 1;
+    border-bottom: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.enroll-btn {
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+.mastery-card .mastery-row:nth-last-of-type(2) {
+    border-bottom: none;
+}
+
+/* --- Excellence Section --- */
+.excellence-section {
+    padding: 6rem 0 4rem 0;
+}
+
+.excellence-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.excellence-left,
+.excellence-right {
+    width: 50%;
+}
+
+.excellence-left .section-title {
+    text-align: left;
+}
+
+.excellence-desc {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.excellence-video-wrapper {
+    width: 100%;
+    aspect-ratio: 16/10;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #222;
+}
+
+.excellence-video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.excellence-diff {
+    margin-top: 2rem;
+}
+
+.excellence-diff .excellence-diff-title {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .excellence-diff .excellence-diff-title {
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .excellence-section .stats-cta .excellence-diff-title {
+        width: 100%;
+    }
+}
+.excellence-icons-row {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.excellence-icon-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.excellence-section .stats-cta {
+    margin-top: 4rem;
+}
+
+.excellence-section .cta-btn {
+    width: auto;
+    flex: 0 0 40%;
+}
+
+.excellence-section .stats-cta .excellence-diff-title {
+    width: 60%;
+    color: var(--light);
+}
+
+/* --- Learn Artist Section --- */
+.learn-artist-section {
+    background: #fff;
+    color: var(--dark);
+    padding: 0;
+}
+
+.learn-artist-flex {
+    display: flex;
+    min-height: 420px;
+}
+
+.learn-artist-image-bg {
+    flex: 0 0 35%;
+    background: url('./assets/images/enaazevedo.png') center center/cover no-repeat;
+    
+}
+
+/* custom mobile view  image start*/
+
+.learn-artist-mobile-img {
+  display: none;
+  margin: 1rem 0;
+}
+
+.learn-artist-mobile-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* custom mobile view image end*/
+
+.learn-artist-content {
+    flex: 1 1 65%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.learn-artist-title {
+    text-align: left;
+    color: var(--dark);
+}
+
+.learn-artist-desc {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.learn-artist-journey-title,
+.learn-artist-achievements-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.learn-artist-journey-desc {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.2rem;
+    border: 1px dashed black;
+    margin-bottom: 2rem;
+    background-color: #E5E5E5;
+}
+
+.learn-artist-achievements-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.achievement-item {
+    flex: 1;
+}
+
+.achievement-img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+
+
+@media (max-width: 480px) {
+  .achievement-item {
+    flex: 0 0 90px;
+  }
+
+  .achievement-img {
+    width: 90px;
+    height: 70px;
+  }
+}
+
+.learn-artist-cta-text {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.learn-artist-btn {
+    width: 50%;
+    align-self: flex-start;
+}
+
+/* --- Skills Section --- */
+.skills-section-updated {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/images/New Skills_bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+}
+
+.skills-desc {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2.5rem auto;
+}
+
+.skills-cards-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.skill-card-img {
+    position: relative;
+    flex: 1 1 18%;
+    max-width: 220px;
+    aspect-ratio: 1/1.2;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #F5F5F5;
+}
+
+.skill-card-img::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+}
+
+.skill-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.skill-card-label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: 600;
+    z-index: 2;
+    padding: 0 0.5rem;
+}
+
+.skills-section-updated .skills-cta-text {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .skills-section-updated .skills-cta-text {
+        padding-top: 30px;
+    }
+}
+
+.button-container {
+    text-align: center;
+}
+
+/* --- Classes Section --- */
+.classes-section-updated {
+    background: #fff;
+    color: var(--dark);
+    padding: 4rem 0;
+}
+
+.classes-flex {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.classes-left,
+.classes-right {
+    flex: 1;
+}
+
+.classes-title {
+    text-align: left;
+    color: var(--dark);
+}
+
+.classes-desc {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.classes-cohort-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.cohort-cards-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.cohort-card {
+    border: 1px dashed black;
+    border-radius: 4px;
+    background: #E5E5E5;
+    flex: 1;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark) !important;
+}
+
+.cohort-card * {
+    color: var(--dark) !important;
+}
+
+.cohort-block {
+    text-align: center;
+}
+
+.cohort-date {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+
+.cohort-type {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--accent) !important;
+}
+
+.classes-cta-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 2.5rem auto 0 auto;
+}
+
+.classes-cta-flex .classes-cta-left {
+    color: #000;
+    width: 60%;
+}
+
+.classes-cta-right {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* --- FAQ Section --- */
+.faq-section {
+    padding: 3rem 0;
+}
+
+.faq {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-top: 1px solid #444;
+    padding: 1rem 0;
+}
+
+.faq-item:last-child {
+    border-bottom: 1px solid #444;
+}
+
+/* RULE: FAQ Question */
+.faq-question {
+    font-family: var(--font-body);
+    /* Montserrat */
+    font-size: 24px;
+    /* 24px as requested */
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    padding-right: 2rem;
+}
+
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    transition: transform 0.2s;
+}
+
+.faq-item.open .faq-question::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+/* RULE: Description (for FAQ Answer) */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: #ccc;
+    font-size: 20px;
+    /* 20px as requested */
+    font-weight: 500;
+    padding-top: 0;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 200px;
+    padding-top: 1rem;
+}
+
+/* --- Contact Section --- */
+.contact-section-updated {
+    background: linear-gradient(to right, #040404 45%, transparent 55%), url('assets/images/simonabroks-61b76a1f287a469.png') right bottom/60% no-repeat;
+    /* padding: 4rem 0 0 0; */
+    position: relative;
+}
+
+.contact-flex {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .contact-flex {
+        flex-direction: column;
+    }
+
+    .contact-image-bg {
+        /* height: 300px; */
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+
+.contact-form-wrap {
+    flex: 0 0 45%;
+    max-width: 500px;
+    padding: 2rem;
+    z-index: 2;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem 0;
+  border: none;
+  border-bottom: 2px solid #707070;
+  background: transparent;
+  color: #fff; /* 👈 Ensures font color is white */
+  font-family: var(--font-body);
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 0;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+/* Ensures dropdown options are readable */
+.contact-form option {
+  color: var(--dark); /* text inside dropdown when opened */
+  background: var(--light); /* background inside dropdown */
+}
+
+
+.contact-form input::placeholder,
+.contact-form select:invalid {
+  color: #fff;
+  opacity: 1; /* ensures it’s not faded in Firefox */
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-bottom-color: var(--accent);
+}
+
+.contact-form option {
+    color: var(--dark);
+    background: var(--light);
+}
+
+.contact-form .learn-artist-btn {
+    width: 100%;
+    margin-top: 1rem;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.overlay {
+    display: none;
+}
+
+/* --- Footer --- */
+.footer.footer-white {
+    background: #fff;
+    color: var(--dark);
+    padding: 2rem 0 1rem 0;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-left {
+    flex: 1 1 40%;
+}
+
+.footer-contact-label {
+  font-weight: 700; /* 👈 bold the label text */
+}
+
+
+.footer-logo-img {
+    max-width: 220px;
+}
+
+.footer-right {
+    flex: 1 1 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-contact-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.footer-contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    align-items: flex-start;
+}
+
+.footer-contact-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-family: var(--font-headline);
+    font-size: 1.3rem;
+}
+
+.footer-contact-icon-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.footer-contact-desc {
+    font-size: 1.1rem;
+    text-align: left;
+    padding-left: calc(20px + 0.5em);
+}
+
+.footer-bottom {
+    background: #fff;
+    color: var(--dark);
+    padding: 1rem 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-bottom-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright,
+.footer-credit {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .footer-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-contact-block {
+    align-items: center;
+  }
+
+  .footer-contact-item {
+    align-items: center;
+  }
+
+  .footer-contact-desc {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+
+
+
+
+
+
+/* --- Responsive Styles --- */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 80px;
+    }
+
+    .stats-title,
+    .section-title {
+        font-size: 60px;
+    }
+
+    .stats-cta-text,
+    .storytelling-cta,
+    .excellence-diff-title,
+    .skills-cta-text,
+    .classes-cta-left {
+        font-size: 28px;
+    }
+
+    header {
+        width: calc(100% - 30px);
+        left: 15px;
+        top: 15px;
+        border-radius: 30px;
+    }
+
+    .nav-btn,
+    .cta,
+    .cta-btn,
+    .skills-btn,
+    .classes-cta-btn,
+    .learn-artist-btn,
+    .enroll-btn {
+        font-size: 16px;
+        padding: 0.8rem 1rem;
+    }
+
+
+@media (max-width: 1024px) {
+  .enquire-container {
+    justify-content: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .enquire-btn {
+    font-size: 14px;
+    padding: 0.4rem 1rem;
+  }
+
+  .enquire-logo {
+    height: 32px;
+  }
+}
+
+
+
+
+    .hero {
+        background: linear-gradient(to right, #040404 50%, transparent 60%), url('./assets/images/hero-img.png') right center/55% no-repeat;
+        min-height: 700px;
+    }
+
+    .excellence-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .excellence-left,
+    .excellence-right {
+        width: 100%;
+    }
+
+    .excellence-left .section-title,
+    .excellence-desc {
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .stats-grid,
+    .stats-cta,
+    .storytelling,
+    .classes-flex,
+    .classes-cta-flex,
+    .footer-flex,
+    .footer-bottom-flex {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+
+.stats-grid {
+        flex-direction: column;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+
+
+    .stats-cta .stats-cta-text,
+    .classes-cta-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .stats-cta .nav-btn,
+    .classes-cta-right {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        margin: 1rem auto 0;
+    }
+
+    .storytelling-content,
+    .classes-left,
+    .classes-right {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .storytelling-content .section-title,
+    .classes-title {
+        text-align: center;
+    }
+
+    .storytelling-image {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+
+    .learn-artist-flex {
+        flex-direction: column;
+    }
+
+    .learn-artist-image-bg {
+        width: 100%;
+        min-height: 220px;
+    }
+
+    .learn-artist-content {
+        padding: 2rem 1.5rem;
+        text-align: center;
+    }
+
+    .learn-artist-title,
+    .learn-artist-desc {
+        text-align: center;
+        line-height: 36px;
+    }
+
+    .learn-artist-btn {
+        width: 100%;
+        /* max-width: 350px; */
+        margin: 1rem auto 0;
+    }
+
+    .contact-section-updated {
+        background: #040404;
+        padding-top: 2rem;
+    }
+
+    .contact-flex {
+        flex-direction: column;
+    }
+
+    .contact-form-wrap {
+        max-width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-contact-block {
+        align-items: center;
+    }
+
+    .footer-contact-desc {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    /* NEW MOBILE MASTERY SECTION: This creates a fixed-looking first column and a horizontally scrolling area for the course cards. */
+    .mastery-table-layout {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        position: relative;
+    }
+    
+
+    .mastery-details-column {
+        position: sticky;
+        left: 0;
+        top: 0;
+        background: #fff;
+        z-index: 2;
+        flex: 0 0 130px;
+    }
+    
+
+    .mastery-courses-wrapper {
+        display: flex;
+        flex: 1;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 1.5rem;
+        padding-bottom: 1rem;
+        scrollbar-width: none; /* Firefox */
+    }
+    
+    .mastery-courses-wrapper::-webkit-scrollbar {
+        display: none; /* Chrome & Safari */
+    }
+    
+
+
+    .mastery-courses-wrapper .mastery-card {
+        /*
+      Calculates the width of the card to fill the available space.
+      (Viewport Width - Details Column - Layout Gap - Container Padding)
+    */
+     flex: 0 0 auto;
+    width: calc(100vw - 130px - 2rem); /* Account for fixed column and padding */
+    scroll-snap-align: start;
+    }
+
+    /*
+  This is the key to fixing the alignment.
+  By default, the footer row grows to fill space. If row content heights differ,
+  the footers become misaligned. This override ensures consistent row behavior.
+*/
+    .mastery-table-layout .mastery-row.footer {
+        flex-grow: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 54px;
+    }
+
+    .stats-title,
+    .section-title {
+        font-size: 48px;
+    }
+
+    .stats-cta-text,
+    .storytelling-cta,
+    .excellence-diff-title,
+    .skills-cta-text,
+    .classes-cta-left {
+        font-size: 24px;
+    }
+
+    p,
+    .excellence-icon-desc,
+    .achievement-label {
+        font-size: 18px;
+    }
+
+
+    @media (max-width: 768px) {
+    .excellence-icon-desc,
+    .achievement-label {
+        font-size: 18px;
+width: 70%;
+        margin: 0 auto;
+    }
+}
+
+    .faq-question {
+        font-size: 20px;
+    }
+
+    .faq-answer {
+        font-size: 18px;
+    }
+
+    header {
+        background: rgba(85, 81, 81, 0.67);
+        border: none;
+        box-shadow: none;
+        width: 98%;
+        left: 3px;
+        top: 10px;
+        padding: 2px 19px;
+    }
+
+   .logo img {
+    width: 65%;          /* Sets the image width to 70% of its container */
+    height: auto;        /* Maintains aspect ratio */
+    padding-left: 20px;  /* Adds left padding */
+}
+
+
+
+    .hero {
+        background: url('./assets/images/hero-img.png') center center/cover no-repeat;
+        min-height: 650px;
+        padding-top: 137px;
+        align-items: flex-start;
+    }
+
+    .hero-inner {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .hero-left {
+        width: 100%;
+    }
+
+    .hero-content {
+        text-align: left;
+        padding: 1rem;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+        border-radius: 10px;
+    }
+
+    .stats-title,
+    .mastery-heading .mastery-subtitle,
+    .mastery-heading .mastery-title,
+    .skills-title,
+    .faq-title {
+        text-align: center !important;
+    }
+
+    .carousel-container {
+        gap: 0.5rem;
+    }
+
+    .carousel {
+        gap: 1rem;
+    }
+
+
+
+    .carousel-item {
+        width: 250px;
+        height: 350px;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    /* MOBILE SLIDER: Skills Cards */
+    .skills-cards-row {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 1rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .skill-card-img {
+        flex: 0 0 150px;
+        width: 150px;
+        scroll-snap-align: start;
+    }
+
+    .excellence-icons-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .excellence-icon-item {
+        text-align: center;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .excellence-section .stats-cta .excellence-diff-title {
+        text-align: center;
+    }
+
+    .learn-artist-image-bg {
+        min-height: 300px;
+    }
+
+    .classes-desc,
+    .classes-cohort-title {
+        text-align: center;
+    }
+
+    .cohort-cards-container {
+        flex-direction: column;
+    }
+
+
+
+
+    .contact-section-updated {
+        background: url('assets/images/simonabroks-61b76a1f287a469.png') center center / cover no-repeat;
+    }
+
+    .contact-flex {
+        position: relative;
+        z-index: 2;
+    }
+
+    .overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: 0.7;
+        z-index: 1;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 48px;
+        padding-top: 35px;
+        width: 80%;
+    }
+
+    .stats-title,
+    .section-title {
+        font-size: 40px;
+
+        padding-top: 35px;
+    }
+
+    .stats-cta-text,
+    .excellence-diff-title,
+    .skills-cta-text,
+    .classes-cta-left {
+        font-size: 30px;
+    }
+
+
+ .storytelling-cta {
+        font-size: 30px;
+        text-align: left; /* 👈 Only this will align left */
+    }
+
+    .faq-question {
+        font-size: 18px;
+    }
+
+    .skill-card-img {
+        flex-basis: 130px;
+        width: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .learn-artist-flex {
+      flex-direction: column;
+    }
+  
+    .learn-artist-image-bg {
+      flex: none;
+      width: 100%;
+      height: auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center top;
+      padding-top: 100%; /* ensures full image is shown — adjust as needed */
+    }
+  
+    .learn-artist-content {
+      padding: 2rem 1rem;
+    }
+  
+    .learn-artist-btn {
+      width: 100%;
+    }
+    .learn-artist-section {
+        margin-top: 2rem; /* creates space from section above */
+        padding-top: 1rem;
+      }
+    
+      .learn-artist-image-bg {
+        margin-top: 1.5rem; /* adds spacing between image and top */
+      }
+
+      .learn-artist-image-bg {
+        display: none;
+    }
+
+    .learn-artist-mobile-img {
+        display: block;
+    }
+    
+  }
+  
+ .popup-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: block;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow-y: auto; /* <--- key addition */
+  padding: 2rem 1rem; /* add spacing in small screens */
+}
+
+
+select {
+  background-image: url('/assets/images/dropdown-arrow-black.svg');
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+  appearance: none;
+  padding-right: 2.5rem;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("../assets/images/dropdown-arrow-black.svg") no-repeat right 1rem center;
+  background-size: 1rem;
+  padding-right: 2.5rem;
+}
+
+
+
+
+.popup-form {
+  /*position: relative;*/
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%; /* Keep this */
+  margin: 0 auto; /* This helps with centering if not in flex context */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  transform: translateX(0); /* Reset any accidental transforms */
+
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  
+  
+  .popup-form h2 {
+    font-size: 30px;
+    font-weight: 500;
+    /* margin-bottom: 1rem; */
+    color: #000;
+  }
+  
+  .popup-form input,
+  .popup-form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+  
+  .popup-form button {
+    width: 100%;
+  }
+  
+ 
+  .popup-form select {
+    width: 100%;
+    padding: 10px;
+    /* margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px; */
+    background-color: white;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+
+@media (max-width: 480px) {
+  .popup-form {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .popup-form h2 {
+    font-size: 24px;
+  }
+}
+
+
+
+  @media (max-width: 768px) {
+  .classes-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .classes-cohort-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .cohort-cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .cohort-card {
+    /*width: 100%;*/
+    max-width: 280px; /* Optional: to avoid stretching too wide */
+    text-align: center;
+  }
+
+  .cohort-block {
+    width: 100%;
+  }
+}
+
+
+/* Style popup form inputs */
+#popupFormOverlay .contact-form input,
+#popupFormOverlay .contact-form select,
+#popupFormOverlay .contact-form textarea {
+  color: #000; /* 👈 This makes the typed text black */
+  background: #fff; /* Optional: ensures it's readable */
+}
+
+/* Optional: placeholder text also black */
+#popupFormOverlay .contact-form input::placeholder,
+#popupFormOverlay .contact-form select:invalid {
+  color: #000;
+  opacity: 1;
+}
+
+
+
+@media (max-width: 768px) {
+    .mastery-row {
+        padding: 5px 6px;
+        font-size: 15px;
+        line-height: 1.2;
+    }
+
+    .mastery-courses-wrapper .mastery-card {
+        flex: 0 0 auto;
+        width: calc(100vw - 168px - 2rem); /* Adjusted for smaller screens */
+        scroll-snap-align: start;
+    }
+
+    .mastery-courses-wrapper {
+        display: flex;
+        flex: 1;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .mastery-table-layout {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 0.5rem;
+    }
+
+    .container {
+        padding: 0 5px;
+    }
+
+
+
+    .mastery-courses-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch; /* 👈 ensures equal height */
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 5px;
+        padding-bottom: 1rem;
+    }
+
+    .mastery-courses-wrapper .mastery-card {
+        flex: 0 0 auto;
+        width: calc(100vw - 168px - 2rem); /* adjust if needed */
+        scroll-snap-align: start;
+        height: auto;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Ensure .mastery-row.footer doesn't collapse */
+    .mastery-row.footer {
+        margin-top: auto; /* pushes button to bottom */
+    }
+}
+
+
